@@ -61,7 +61,10 @@ previousButton.addEventListener("click", function () {
 
     
 });
-
+function setHalfVolume() { 
+    song.volume = 0.25;
+  } 
+  setHalfVolume();
 nextButton.addEventListener("click", function () {
     
     currentTrack = (currentTrack + 1) % audioSources.length;
